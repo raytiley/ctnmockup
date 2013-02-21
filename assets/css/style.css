@@ -3,7 +3,8 @@
     /* Padding below the footer and lighter body text */
 
     body {
-      padding-bottom: 40px;
+      padding-bottom: 0;
+      margin-bottom: 0;
       color: #5a5a5a;
     }
 
@@ -100,7 +101,7 @@
       position: static;
       max-width: 750px;
       padding: 0 20px;
-      margin-top: 200px;
+      margin-top: 275px;
     }
     .carousel-caption h1,
     .carousel-caption .lead {
@@ -162,11 +163,45 @@
       letter-spacing: -1px;
     }
 
+    /* hover on play */
+    a span.play { 
+      display:none; 
+      background: url('../img/play-hover-small.png') center center no-repeat;
+      position: relative;
+      z-index: 100;
+    }
+
+    a:hover span.play { display:block; }
+
+    .play-medium {
+      margin: -160px 0 0 0;
+      height: 160px; 
+    }
+
+    .play-large {
+      margin: -220px 0 0 0;
+      height: 220px; 
+    }
+
+    .play-small {
+      margin: -100px 0 0 0;
+      height: 100px; 
+    }
+
+    /*  Footer */
+    footer {
+      background-color: grey;
+      color: #f4f4f4;
+    }
+    footer li {
+      list-style: none;
+    }
+
 
 
     /* RESPONSIVE CSS
     -------------------------------------------------- */
-
+/*
     @media (max-width: 979px) {
 
       .container.navbar-wrapper {
@@ -246,6 +281,7 @@
       }
 
     }
+    */
 /* Interesting fade */
 /*
 #myCarousel.carousel .item {-webkit-transition: opacity 3s; -moz-transition: opacity 3s; -ms-transition: opacity 3s; -o-transition: opacity 3s; transition: opacity 3s;}
